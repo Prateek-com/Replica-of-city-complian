@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>City Complaint & Issue Reporting System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <h1>City Complaint & Issue Reporting System</h1>
+      <p class="subtitle">Municipal Corporation — Public Grievance Portal</p>
+    </div>
+    <nav>
+      <a href="#" class="nav-link active" data-page="complaint">File Complaint</a>
+      <a href="#" class="nav-link" data-page="status">Check Status</a>
+      <a href="#" class="nav-link" data-page="login">Authority Login</a>
+    </nav>
+  </header>
 
+  <main>
+    <!-- Public Complaint Page -->
+    <section id="page-complaint" class="page active">
+      <div class="card">
+        <h2>Submit a Complaint</h2>
+        <p class="card-desc">Please fill in the details below to register your complaint.</p>
+        <form id="complaint-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name <span class="req">*</span></label>
+              <input type="text" id="name" required placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+              <label for="mobile">Mobile Number <span class="req">*</span></label>
+              <input type="tel" id="mobile" required placeholder="10-digit mobile number" pattern="[0-9]{10}">
+            </div>
+          </div> 
+          
